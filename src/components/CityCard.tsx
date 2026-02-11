@@ -1,6 +1,8 @@
 import { useState } from "react";
 import populationApi from "../services/populationApi";
 import type { City } from "../types/City";
+import type { IBGEResponse } from "../types/IBGEResponse";
+
 
 interface CityCardProps {
     city: City
@@ -18,12 +20,10 @@ export function CityCard({city} : CityCardProps){
         setLoading(true);
         setErroPop("")
         try{
-            const popuResponse =  await populationApi.get(`N6[${city.codigo_ibge}]`)
+            const popuResponse =  await populationApi.get(`?localidades=N6[${city.codigo_ibge}]&classificacao=1[6795]`)
         
-            const popuData = popuResponse.data
-
-            const popuValue = popuData.resultados.series.serie['2022']
-
+            const popuData = (popuResponse.data) as IBGEResponse[]
+            const popuValue = popuData[0].resultados[0].series[0]?.serie["2022"];
             if (popuValue){
                 setPopulacao(popuValue);
             } 

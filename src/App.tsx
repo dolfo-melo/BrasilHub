@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import  api from './services/api.ts'
-import { CityCard, City } from './components/CityCard.tsx'
+import { CityCard }  from './components/CityCard.tsx'
 import './main.css'
 
 export default function App() {
@@ -21,12 +21,6 @@ export default function App() {
     }
   }
 
-  function showResults(){
-    return (
-      <CityCard{City}/>
-    )
-  }
-
   return (
     <>
       <div className="container flex collumn justify-center align-center max-w-full h-100">
@@ -45,13 +39,7 @@ export default function App() {
       <div className="resultado flex flex-col-reverse justify-center align-center">
         <ul>
           {municipios.map((municipio: any) => (
-            <div className="content flex justify-start align-center max-w-full h-50">
-              <li key={municipio.id}>
-                <h2>{municipio.nome}</h2>
-                <h4>{municipio.codigo_ibge}</h4>
-                <button onClick={showResults}>Saiba mais</button>
-              </li>
-            </div>
+            <CityCard key={municipio.id} city={municipio} />
           ))}
         </ul>
       </div>
