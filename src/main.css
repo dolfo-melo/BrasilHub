@@ -23,13 +23,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../public/backgroundBrasilHub\ 2.png);
+    background-image: url(../public/backgroundBrasilHub.png);
     background-size: fill;
     padding: 5%;
 }
 
 .content{
-    width: 20dvw;
+    width: 25dvw;
     height: 30dvh;
     display: flex;
     justify-content: start;

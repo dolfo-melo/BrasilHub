@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from 'axios'
 
 const api = axios.create({
     baseURL: 'https://brasilapi.com.br/api/ibge/municipios/v1/'
