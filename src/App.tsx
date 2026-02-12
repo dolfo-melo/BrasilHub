@@ -121,7 +121,7 @@ return (
         <div className="inset-0 z-0 overflow-hidden">
           <img 
             src="/logoBrasilHub.png"  
-            className="logo w-4/12 sm: flex justify-end items-end lg:w-10/12 object-contain" 
+            className="logo w-4/12 sm: flex justify-center items-center lg:w-10/12 object-contain" 
             alt="logo"  
             draggable={false} />
         </div>
