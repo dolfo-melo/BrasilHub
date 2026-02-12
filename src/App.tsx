@@ -134,7 +134,7 @@ return (
           
             {/* Container Resultados */}
             <div className="cityCardWapper w-full max-w-screen max-h-screen flex flex-col items-center">
-              <ul className="grid grid-cols-1 text-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 w-9xl" ref={gridRef}>
+              <ul className="grid grid-cols-1 text-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 w-9xl overflow-hidden" ref={gridRef}>
                 {municipiosPaginados?.map((municipio: any) => (
                   <li className="sm: items-start h-50">
                     <CityCard key={municipio?.id} city={municipio} />

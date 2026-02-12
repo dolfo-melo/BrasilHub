@@ -35,7 +35,7 @@ export function CityCard({city} : CityCardProps){
     }
 
     return (
-            <div className="w-full h-25 flex-col bg-blue-700 hover:bg-blue-600 border-l-8 border-yellow-500 rounded-xl shadow-lg transition-all flex justify-around items-center group">
+            <div className="w-full h-20 flex-col bg-blue-700 hover:bg-blue-600 border-l-8 border-yellow-500 rounded-xl shadow-lg transition-all flex justify-around items-center group">
                 <h3 className="font-bold text-1xl text-yellow-300">{city.nome}</h3>
                 <div className="mt-2">
                     {populacao ? (
