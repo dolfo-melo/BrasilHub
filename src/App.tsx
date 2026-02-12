@@ -103,10 +103,10 @@ useGSAP(() => {
 
 return (
     <>
-      <div className=" container relative min-w-dvw w-full min-h-8/12 flex flex-col-reverse lg:flex-row items-center justify-center gap-60 overflow-hidden">
+      <div className="container relative min-w-dvw w-full min-h-8/12 flex flex-col-reverse lg:flex-row items-center justify-center gap-60 overflow-hidden">
         <div className="z-10 w-full lg:w-1/2 flex flex-col items-center lg:items-end transition-all duration-500 overflow-hidden">
           <div className="z-10 w-screen flex flex-col items-center sm:w-6/12 md:w-8/12 lg:w-12/12 justify-end transition-all duration-500 ease-in-out">
-            <h1 className="text overflow-hidden text-green-600 text-shadow-md text-shadow-black cursor-pointer sm:text-3xl md:text-5xl lg:text-8xl"></h1>
+            <h1 className="text overflow-hidden text-green-600 text-shadow-md text-shadow-black cursor-pointer sm:text-3xl md:text-5xl lg:text-7xl"></h1>
             <div className="mainInput content flex flex-col justify-start items-center gap-3 bg-blue-400 sm:max-h-50 w-60 text-2xl  lg:max-h-60 p-10 rounded-4xl max-w-100">
               <h3 className="subtext text-white text-xl md:text-2xl font-bold mb-2 text-center cursor-pointer overflow-hidden"></h3>
               <input 

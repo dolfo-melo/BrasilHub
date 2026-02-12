@@ -24,7 +24,7 @@ body{
     justify-content: center;
     align-items: center;
     background-image: url(../public/backgroundBrasilHub.png);
-    background-size: fill;
+    background-size: cover;
     padding: 5%;
 }
 
